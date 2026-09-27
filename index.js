@@ -54,7 +54,17 @@ const galleryData = [
         ]
     }
 ];
-
+document.addEventListener("DOMContentLoaded", () => {
+    // كود تشغيل الفيديو تلقائياً فوراً
+    const video = document.getElementById("reelVideo");
+    if (video) {
+        video.play().catch(error => {
+            console.log("Auto-play was prevented:", error);
+        });
+    }
+    
+    // ... باقي الأكواد الموجودة لديك
+});
 // تحميل المعارض عند فتح الصفحة
 document.addEventListener("DOMContentLoaded", () => {
     renderGallery(galleryData);
