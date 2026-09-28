@@ -50,32 +50,123 @@ body {
     font-weight: bold;
 }
 
-/* Navbar */
-.navbar {
+/* --- تنسيق الهيدر واللوجو --- */
+.site-header {
     position: sticky;
     top: 0;
+    left: 0;
+    width: 100%;
     background: #ffffff;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
     z-index: 1000;
     padding: 12px 0;
 }
-.container {
-    max-width: 1200px;
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 0 15px;
 }
-.nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+
+/* تنسيق اللوجو واسم الشركة */
 .brand-logo {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 12px;
     text-decoration: none;
-    max-width: 70%; /* منع اللوجو من مد الشاشة أو أخذ مساحة زيادة */
     overflow: hidden;
+}
+
+.header-logo-img {
+    width: 42px !important;
+    height: 42px !important;
+    max-width: 42px !important;
+    object-fit: contain;
+    border-radius: 8px;
+    display: block;
+}
+
+.brand-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.brand-name .main-title {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: #111827;
+    line-height: 1.2;
+}
+
+.brand-name .sub-title {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #6b7280;
+}
+
+/* تنسيق الروابط والقائمة */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #374151;
+    font-weight: 700;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #e50914; /* لون مميز للـ hover */
+}
+
+/* زر القائمة للموبايل */
+.menu-toggle-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.3rem;
+    color: #111827;
+    cursor: pointer;
+}
+
+/* تجاوب الهيدر مع الموبايل */
+@media (max-width: 992px) {
+    .menu-toggle-btn {
+        display: block;
+    }
+
+    .site-nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #ffffff;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+    }
+
+    .site-nav.active {
+        max-height: 300px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+        text-align: center;
+    }
 }
 
 /* تصغير وتنسيق لوجو الهيدر ليكون مناسب لشكل الصفحة */
