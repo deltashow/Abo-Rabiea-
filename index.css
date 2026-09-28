@@ -81,9 +81,9 @@ body {
 }
 
 .header-logo-img {
-    width: 42px !important;
-    height: 42px !important;
-    max-width: 42px !important;
+    width:20px;
+    height:20px;
+    max-width:20px;
     object-fit: contain;
     border-radius: 8px;
     display: block;
