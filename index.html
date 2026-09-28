@@ -30,33 +30,36 @@
         </div>
     </div>
 
-    <!-- Header / Navigation -->
-    <header class="navbar">
-        <div class="container nav-container">
-        <a href="#home" class="brand-logo">
-    <!-- تأكد أن اسم الصورة صحيح وموجود في مجلد images وخالي من المسافات -->
-    <img src="images/لوجو pvc.jpg" alt="Abo Rabiea Logo" class="header-logo-img">
-    <div class="brand-name">
-        <span class="main-title">Abo Rabiea</span>
-        <span class="sub-title">For integrated upvc works</span>
-    </div>
-</a>
+    <!-- Header / الهيدر الخاص بالموقع -->
+    <header class="site-header">
+        <div class="container header-container">
+            <!-- Logo & Brand Name -->
+            <a href="#home" class="brand-logo">
+                <img src="images/لوجو pvc.jpg" alt="Abo Rabiea Logo" class="header-logo-img">
+                <div class="brand-name">
+                    <span class="main-title">Abo Rabiea</span>
+                    <span class="sub-title">For integrated upvc works</span>
+                </div>
+            </a>
 
-
-            <nav class="nav-menu" id="navMenu">
-                <a href="#home" class="nav-link active">الرئيسية</a>
-                <a href="#about" class="nav-link">عن الشركة</a>
-                <a href="#features" class="nav-link">المميزات</a>
-                <a href="#gallery" class="nav-link">معرض الأعمال</a>
-                <a href="#location" class="nav-link">الموقع</a>
-                <a href="#contact" class="nav-link btn-contact-nav">تواصل معنا</a>
+            <!-- Navigation Menu / القائمة -->
+            <nav class="site-nav" id="siteNav">
+                <ul class="nav-links">
+                    <li><a href="#home">الرئيسية</a></li>
+                    <li><a href="#features">مميزاتنا</a></li>
+                    <li><a href="#gallery">معرض الأعمال</a></li>
+                    <li><a href="#contract">عقد الاتفاق</a></li>
+                    <li><a href="#contact">تواصل معنا</a></li>
+                </ul>
             </nav>
 
-            <div class="hamburger" id="hamburger">
+            <!-- Mobile Menu Toggle Button / زر القائمة للموبايل -->
+            <button class="menu-toggle-btn" id="menuToggleBtn" aria-label="فتح القائمة">
                 <i class="fa-solid fa-bars"></i>
-            </div>
+            </button>
         </div>
     </header>
+
 
     <!-- Hero Section -->
     <section id="home" class="hero-section">
