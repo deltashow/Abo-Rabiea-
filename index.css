@@ -80,9 +80,9 @@ body {
 
 /* تصغير وتنسيق لوجو الهيدر ليكون مناسب لشكل الصفحة */
 .header-logo-img {
-    width: 40px !important;
-    height: 40px !important;
-    max-width: 40px !important;
+    width: 25px !important;
+    height: 26px !important;
+    max-width: 25px !important;
     object-fit: contain;
     border-radius: 8px; /* لو حابب تعمل حواف دائرية خفيفة للوجو، ممكن تشيلها لو مش عايز */
     display: block;
