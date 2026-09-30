@@ -165,7 +165,7 @@ body {
         padding: 20px;
         text-align: center;
     }
-
+}
 
 /* تصغير وتنسيق لوجو الهيدر ليكون مناسب لشكل الصفحة */
 .header-logo-img {
@@ -353,13 +353,6 @@ body {
     font-size: 0.75rem;
     color: #4b5563;
     font-weight: bold;
-}
-.about-img-box {
-    width: 480px;
-    height: 360px;
-    border-radius: 9px;
-    overflow: cover;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
 }
 .about-img-box {
     width: 100%;
