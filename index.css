@@ -361,9 +361,21 @@ body {
     overflow: cover;
     box-shadow: 0 5px 20px rgba(0,0,0,0.1);
 }
+.about-img-box {
+    width: 100%;
+    max-width: 300px; /* صغرنا الحجم الأقصى للصورة عشان تبقى متناسقة ومنضبطة */
+    height: auto;     /* لغينا الطول الثابت وخليناه مرن حسب حجم الصورة */
+    margin: 0 auto;   /* عشان تتوسط العرض في الموبايل والكمبيوتر */
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
 .about-img {
     width: 100%;
-    height: 115%;
+    height: auto;     /* الحفاظ على أبعاد اللوجو بدون أي تشوه */
+    object-fit: contain; /* عشان اللوجو يظهر بالكامل من غير ما يتقص منه حاجة */
+    display: block;
 }
 /* --- تنسيق قسم الـ Reel والفيديوهات الرأسية --- */
 .reel-showcase-section {
